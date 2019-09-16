@@ -1,7 +1,11 @@
 package com.creche.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 
+
+@Entity
 public class Parents implements Serializable {
 
     private String nomDeFamille;
@@ -10,6 +14,7 @@ public class Parents implements Serializable {
     private String codePostale;
     private String ville;
     private String telephone;
+    @Id
     private String email;
     private String telephone2;
 
